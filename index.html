@@ -4,10 +4,358 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>MQ Diploma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>MQ Diplom</title>
 </head>
 <body>
-    <h1>Привет, мир!</h1>
+    <header class="header">
+        <div class="container">
+                <div class="banner-bg">
+                    <img src="images/banner-bg.jpg" alt="Баннер" class="banner">
+                </div>
+
+                <div class="logo">
+                    <img src="svg/noemi-logo.svg" alt="Логотип" class="noemi-logo">
+                </div>
+
+                <div class="navigate">
+                  <nav class="menu">
+                    <ul class="menu-list">
+                      <li class="menu-list-item">
+                        <a class="menu-link" href="#home">ГЛАВНАЯ</a>
+                      </li>
+                      <li class="menu-list-item">
+                        <a class="menu-link" href="#0">ПОСТЫ</a>
+                      </li>
+                      <li class="menu-list-item">
+                        <a class="menu-link" href="#0">СТАТЬИ</a>
+                      </li>
+                      <li class="menu-list-item">
+                        <a class="menu-link" href="#0">ТЕГИ</a>
+                      </li>
+                      <li class="menu-list-item">
+                        <a class="menu-link" href="#0">ТЕМЫ</a>
+                      </li>
+                      <li class="menu-list-item">
+                        <a class="menu-link" href="#0">КОНТАКТЫ</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div class="title">
+                    <span class="title__label">Блог о творчестве, спорте<br>образе жизни</span>
+                </div>
+               
+        </div>
+    </header>
+
+    <div class="main">
+      <div class="sports-lifestyle-container">
+
+        <div class="trends">
+          <section class="section-trends">
+            <header class="section__header">
+              <h2 class="title-section-title">Сейчас в тренде</h2>
+              <div class="title-shape"></div>
+            </header>
+            <div class="section__body">
+              <article class="post">
+                <div class="post__previewbox">
+                  <img src="images/trend1.jpg"
+                      srcset="images/trend1.jpg 1x,
+                      images/trend1.jpg 2x" class="post__preview" alt="Preview for trends">
+                </div>
+                <div class="post-content-lifestyle">
+                  <span class="category category__lifestyle">Lifestyle INTERIOR</span>    
+                  <h3 class="title post__lifestyle">Сейчас в тренде: сад на подоконнике</h3>
+                </div>
+              </article>
+
+              <article class="post">
+                <div class="post__previewbox">
+                  <img src="images/trend2.jpg"
+                      srcset="images/trend2.jpg 1x,
+                      images/trend2.jpg 2x" class="post__preview" alt="Preview for trends">
+                </div>
+                <div class="post-content-food">
+                  <span class="category category__food">FOOD</span>  
+                  <h3 class="title post__food">Cыры на красивых картинках из интернета: какие они на вкус?</h3>
+                </div>
+              </article>
+
+              <article class="post">
+                <div class="post__previewbox">
+                  <img src="images/trend3.jpg"
+                      srcset="images/trend3.jpg 1x,
+                      images/trend3.jpg 2x" class="post__preview" alt="Preview for trends">
+                </div>
+                <div class="post-content-lifestyle">
+                  <span class="category category__lifestyle">Lifestyle TRAVEL</span>   
+                  <h3 class="title post__lifestyle">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h3>
+                </div>
+              </article>
+
+              <article class="post">
+                <div class="post__previewbox">
+                  <img src="images/trend4.jpg"
+                      srcset="images/trend4.jpg 1x,
+                      images/trend4.jpg 2x" class="post__preview" alt="Preview for trends">
+                </div>
+                <div class="post-content-lifestyle">
+                  <span class="category category__lifestyle">Food Health</span>   
+                  <h3 class="title post__lifestyle">Сейчас в тренде: сКОЛЬКО ВИТАМИНА c В ЛИМОНАХ?</h3>
+                </div>
+              </article>
+
+            </div>
+          </section>
+        </div>
+
+        <div class="interesting-info">
+          <div class="interesting-container">
+            <section class="section-post-list">
+              <div class="post-list">
+                    <article class="article travel__card">
+                      <div class="card-container">
+                        <div class="post__image">
+                              <img src="images/last-post1.jpg"
+                                srcset="images/last-post1.jpg 1x,
+                                        images/last-post1.jpg 2x"
+                                class="post__img" alt="Preview for trevel">
+                        </div> 
+              
+                        <div class="post__description">
+                              <header class="category category__health">Travel Health</header>
+                              <h3 class="card-name">10 мест, ради которых стоит проснуться на рассвете</h3>
+                              <time class="card-date" datetime="2019-06-10">10 июня 2019</time>
+                              <span class="author">Неизвестный автор</span>
+                              <div class="card-content">
+                                <p>Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, 
+                                  запущены фонтаны города...Музеи еще закрыты. Что посмотреть?
+                                </p>
+                              </div>
+                        </div>
+                      </div>
+                    </article> 
+
+                    <article class="article lifestyle__card">
+                      <div class="card-container">
+                        <div class="post__image">
+                              <img src="images/last-post2.jpg"
+                                srcset="images/last-post2.jpg 1x,
+                                        images/last-post2.jpg 2x"
+                                class="post__img" alt="Preview for trevel">
+                        </div> 
+              
+                        <div class="post__description">
+                              <header class="category category__health">health     lifestyle    </header>
+                              <h3 class="card-name">ЙОга для начинающих в домашних условиях</h3>
+                              <time class="card-date" datetime="2019-06-10">10 июня 2019</time>
+                              <span class="author">Неизвестный автор</span>
+                              <div class="card-content">
+                                <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий 
+                                  йогой из того, что можно найти в шкафу.
+                                </p>
+                              </div>
+                        </div>
+                      </div>
+                    </article> 
+
+                    <article class="article music__card">
+                      <div class="card-container">
+                        <div class="post__image">
+                              <img src="images/last-post3.jpg"
+                                srcset="images/last-post3.jpg 1x,
+                                        images/last-post3.jpg 2x"
+                                class="post__img" alt="Preview for trevel">
+                        </div> 
+              
+                        <div class="post__description">
+                              <header class="category category__health">music</header>
+                              <h3 class="card-name">Лучшие музыкальные фестивали этого лета</h3>
+                              <time class="card-date" datetime="2019-06-10">10 июня 2019</time>
+                              <span class="author">Неизвестный автор</span>
+                              <div class="card-content">
+                                <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из 
+                                  них вы разобьете свою палатку?
+                                </p>
+                                <p>Мы составили список лучших летних фестивалей по всему миру.
+                                </p>
+                              </div>
+                        </div>
+                      </div>
+                    </article> 
+
+                    <article class="article foof__card">
+                      <div class="card-container">
+                        <div class="post__image">
+                              <img src="images/last-post4.jpg"
+                                srcset="images/last-post4.jpg 1x,
+                                        images/last-post4.jpg 2x"
+                                class="post__img" alt="Preview for trevel">
+                        </div> 
+              
+                        <div class="post__description">
+                              <header class="category category__health">LYFESTYLE FOOD </header>
+                              <h3 class="card-name">Наукоёмкий подход к кулинарии</h3>
+                              <time class="card-date" datetime="2019-06-10">10 июня 2019</time>
+                              <span class="author">Неизвестный автор</span>
+                              <div class="card-content">
+                                <p>Узнаем основы проектирования новых пищевых и около-пищевых 
+                                  опытов, вскроем физику, химию и микробиологию еды.
+                                </p>
+                              </div>
+                        </div>
+                      </div>
+                    </article> 
+
+                    <article class="article art__card">
+                      <div class="card-container">
+                        <div class="post__image">
+                              <img src="images/last-post5.jpg"
+                                srcset="images/last-post5.jpg 1x,
+                                        images/last-post5.jpg 2x"
+                                class="post__img" alt="Preview for trevel">
+                        </div> 
+              
+                        <div class="post__description">
+                              <header class="category category__health">Lifestyle INTERIOR art</header>
+                              <h3 class="card-name">делаем модные принты на подушках для интерьера</h3>
+                              <time class="card-date" datetime="2019-06-10">10 июня 2019</time>
+                              <span class="author">Неизвестный автор</span>
+                              <div class="card-content">
+                                <p>Подушки для дивана целесообразнее заказать в съемных чехлах на 
+                                  молнии, если потребуется чистка подушек, проще снять чехлы, чем 
+                                  везти подушку в химчистку.
+                                </p>
+                              </div>
+                        </div>
+                      </div>
+                    </article> 
+              </div>
+            </section>
+
+            <aside class="side-bar-lifestyle">
+              <div class="side-bar">
+                <div class="latest-posts">
+                    <article class="article travel__card">
+                      <div class="card-container">
+                        <div class="post__image-sidebar">
+                              <img src="images/2.jpg"
+                                srcset="images/2.jpg 1x,
+                                        images/2.jpg 2x"
+                                class="post__img" alt="Preview for trevel">
+                        </div> 
+              
+                        <div class="post__description-sidebar">
+                              <time class="card-date" datetime="2019-06-14">14 июня 2019</time>
+                              <h3 class="card-name-sidebar">10 мест, ради которых стоит проснуться</h3>
+                        </div>
+                      </div>
+                    </article> 
+
+                    <article class="article lifestyle__card">
+                      <div class="card-container">
+                        <div class="post__image-sidebar">
+                              <img src="images/151.jpg"
+                                srcset="images/151.jpgg 1x,
+                                        images/151.jpg 2x"
+                                class="post__img" alt="Preview for lifestyle">
+                        </div> 
+              
+                        <div class="post__description-sidebar">
+                              <time class="card-date" datetime="2019-06-14">14 июня 2019</time>
+                              <h3 class="card-name-sidebar">Йoга для домашних</h3>
+                        </div>
+                      </div>
+                    </article> 
+
+                    <article class="article balcony__card">
+                      <div class="card-container">
+                        <div class="post__image-sidebar">
+                              <img src="images/45.jpg"
+                                srcset="images/l45.jpg 1x,
+                                        images/45.jpg 2x"
+                                class="post__img" alt="Preview for balcony">
+                        </div> 
+              
+                        <div class="post__description-sidebar">
+                              <time class="card-date" datetime="2019-06-14">14 июня 2019</time>
+                              <h3 class="card-name-sidebar">Как мы превратили классное место в балкон</h3>
+                        </div>
+                      </div>
+                    </article> 
+
+                    <article class="article food__card">
+                      <div class="card-container">
+                        <div class="post__image-sidebar">
+                              <img src="images/501.jpg"
+                                srcset="images/501.jpg 1x,
+                                        images/501.jpg 2x"
+                                class="post__img" alt="Preview for food">
+                        </div> 
+              
+                        <div class="post__description-sidebar">
+                              <time class="card-date" datetime="2019-06-14">14 июня 2019</time>
+                              <h3 class="card-name-sidebar">Кулинарный подход к науке</h3>
+                        </div>
+                      </div>
+                    </article> 
+
+                    <article class="article hairstyle__card">
+                      <div class="card-container">
+                        <div class="post__image-sidebar">
+                              <img src="images/7.jpg"
+                                srcset="images/7.jpg 1x,
+                                        images/7.jpg 2x"
+                                class="post__img" alt="Preview for hairstyle">
+                        </div> 
+              
+                        <div class="post__description-sidebar">
+                              <time class="card-date" datetime="2019-06-14">14 июня 2019</time>
+                              <h3 class="card-name-sidebar">Лучшие прически для распущенных волос</h3>
+                        </div>
+                      </div>
+                    </article> 
+                </div>
+              </div>
+            </aside>
+
+          
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="networks-block">
+        <div class="networks">
+          <div class="network-item">
+            <a href="#">
+            <img src="svg/001-dribbble.svg" alt="Дриббл" class="dribbble"></a>
+          </div>
+
+          <div class="network-item">
+            <a href="#">
+            <img src="svg/001-pinterest.svg" alt="Пинтерест" class="pinterest"></a>
+          </div>
+
+          <div class="network-item">
+            <a href="#">
+            <img src="svg/003-tumblr.svg" alt="Пинтерест" class="tumbler"></a>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="copyrihgt">
+      <p>Copyrihgt &copy; 2009-2019 City Blog LLC.</p>
+      </div>
+
+    </footer>
+
     
 </body>
 </html>

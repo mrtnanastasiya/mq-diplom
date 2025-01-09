@@ -1,4 +1,460 @@
-h1 {
-    color: red;
-    border: 1px solid red;
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'OpenSans-Boldw2';
+    src: url(../fonts/OpenSans-Bold.woff2);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Boldttf';
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-style: normal;
+}
+
+body {
+    max-width: 1660px;
+    height: 6414px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 1660px;
+    height: 450px;
+    color: #ffffff;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    z-index: 1;
+}
+
+.container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 2;
+
+}
+
+.title__label {
+    position: absolute;
+    width: 679px;
+    font-family: OpenSans-Bold, Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding: 194px 491px 147px 490px;
+    z-index: 3;
+}
+
+.noemi-logo {
+    position: absolute;
+    width: 179px;
+    padding: 27px 1234px 380px 245px;
+    z-index: 4;
+}
+
+.menu-list {
+    display: flex;
+    width: 462px;
+    height: 9px;
+    font-family: OpenSans-Regular, sans-serif;
+    font-size: 13px;
+    line-height: 36px;
+    color:#ffffff;
+    padding: 46px 245px 395px 953px;
+    position: absolute;
+    z-index: 5;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-list-item:nth-child(n+2) {
+    margin-left: 36px;
+  }
+
+.sports-lifestyle-container {
+    display: flex;
+    flex-direction: column;
+}  
+
+.trends {
+    display: flex;
+    width: 1660px;
+    height: 442px;
+    position: relative;
+}
+
+.section__header {
+    display: flex;
+    flex-direction: column;
+    width: 1660px;
+    height: 124px;
+}
+
+.title-section-title {
+    width: 182px;
+    height: 23px;
+    margin: 58px 739px 15px 739px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: OpenSans-Bold, sans-serif;
+    text-align: center;  
+}
+
+.title-shape {
+    width: 67px;
+    height: 4px;
+    margin: 0px 797px 24px 796px;
+    background: #e1d9bd;
+    box-sizing: border-box;
+}
+
+.section__body {
+    display: flex;
+    position: relative;
+    width: 1660px;
+    height: 320px;
+}
+
+.post {
+    display: flex;
+    position: relative;
+    width: 415px;
+    height: 320px;
+    
+}
+
+.post:nth-child(n+2) {
+    margin-left: 4px;
+}
+
+ .post__preview {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: top left;
+    z-index: 1;
+ }
+
+ .post::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 2;
+ }
+
+ .post-content-lifestyle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 371px;
+    height: 147px;
+    border: 2px solid #8d8055;
+    z-index: 3;
+    margin: 155px 23px 18px 21px;
+    box-sizing: border-box;
+ }
+
+ .category {
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: OpenSans-Bold, sans-serif;
+ }
+
+ .category__lifestyle {
+    width: 152;
+    height: 12;
+    box-sizing: border-box;
+    margin: 30px 180px 0px 39px;
+    
+ }
+
+ .category:hover {
+    color: #c1d4d8;
+  }
+
+ .title {
+    width: 235;
+    height: 48;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: OpenSans-Boldw2, sans-serif;
+ }
+
+ .post__lifestyle {
+    margin: 0px 97px 32px 39px;
+ }
+
+ .post-content-food {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 371px;
+    height: 172px;
+    border: 2px solid #8d8055;
+    z-index: 3;
+    margin: 132px 23px 18px 21px;
+    box-sizing: border-box;
+ }
+
+ .category__food {
+    width: 40;
+    height: 12;
+    box-sizing: border-box;
+    margin: 30px 290px 0px 39px;
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: OpenSans-Bold, sans-serif;
+ }
+
+ .post__food {
+    margin: 0px 45px 32px 39px;
+ }
+
+ .interesting-container {
+    display: flex;
+ }
+
+ .interesting-info {
+    display: flex;
+ }
+
+ .post-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-container {
+    display: flex;
+    width: 272;
+    height: 81;
+    box-sizing: border-box;
+  }
+  
+  .post__image {
+    display: flex;
+    width: 383px;
+    height: 295px;
+    box-sizing: border-box;
+  }
+  
+  .post__description {
+      display: block;
+      
+      width: 400px;
+      height: 295px;
+      box-sizing: border-box;
+  }
+  
+  
+.category__health {
+    width: 125px;
+    height: 12px;
+    padding-bottom: 16px;
+}
+
+.card-name {
+    width: 330px;
+    height: 40px;
+    margin-bottom: 38px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-weight: 700;
+    font-family: OpenSans-Bold, sans-serif;
+}
+
+.card-date {
+    width: 125px;
+    height: 12px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #888888;
+    font-weight: 400;
+    font-family: OpenSans-Regular, sans-serif;
+}
+
+.author {
+    width: 125px;
+    height: 14px;
+    margin-bottom: 56px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: 700;
+    font-family: OpenSans-Bold, sans-serif;
+}
+
+.card-content {
+    width: 367px;
+    height: 62px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    font-family: OpenSans-Bold, sans-serif;
+}
+
+.latest-posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-sidebar {
+    display: flex;
+    width: 71px;
+    height: 71px;
+    box-sizing: border-box;
+}
+
+.description-sidebar {
+    display: block;
+    width: 202px;
+    height: 71px;
+    box-sizing: border-box;
+}
+
+.card-name-sidebar {
+    width: 180;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    font-family: OpenSans-Bold, sans-serif;
+}
+
+
+.footer {
+    position: absolute;
+    display: fixed;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.networks-block {
+    display: flex;
+    background-color: #f4f7f6;
+    width: 1170px;  
+    height: 83px; 
+    justify-content: center;
+    align-items: center;
+    margin: 0 245px;
+   }
+
+.networks {
+    display: flex;
+    width: 110px;
+    height: 20px;
+}
+
+.network-item:nth-child(n+2) {
+    margin-left: 30px;
+}
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+}
+
+.pinterest {
+    width: 16px;
+    height: 20px;
+
+}
+
+.tumbler {
+    width: 13px;
+    height: 20px;
+}
+
+.copyrihgt {
+    display: flex;
+    width: 218px; 
+    height: 14px;
+    color: #999999;
+    justify-content: center;
+    align-items: center;
+    margin: 76px auto 43px auto;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
